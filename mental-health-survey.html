@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mental Health Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mental Health Survey</h1>
+        </header>
+        <form id="survey-form">
+            <!-- 7 Questions here -->
+            <div class="question">
+                <label for="q1">How often do you feel anxious?</label>
+                <select id="q1" name="q1" required>
+                    <option value="">Select</option>
+                    <option value="1">Never</option>
+                    <option value="2">Sometimes</option>
+                    <option value="3">Often</option>
+                    <option value="4">Always</option>
+                </select>
+            </div>
+
+            <!-- Repeat similar blocks for questions 2 to 7 -->
+
+            <button type="submit">Next</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('survey-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'result.html';
+        });
+    </script>
+</body>
+</html>

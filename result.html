@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Survey Completed</h1>
+        </header>
+        <p>Your mental health status has been assessed.</p>
+        <p>Based on your answers, we recommend speaking to a healthcare professional.</p>
+
+        <button onclick="sendReport()">Send Report</button>
+        <button onclick="goHome()">Go to Home Page</button>
+    </div>
+
+    <script>
+        function sendReport() {
+            alert('Your report has been sent!');
+        }
+
+        function goHome() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
